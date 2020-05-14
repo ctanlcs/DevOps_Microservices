@@ -6,10 +6,17 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath=demolocal
+dockerid=ctanlcs
+dockertag=v1.0
+dockerpassword=tanes1006
 
 # Step 2:  
 # Authenticate & tag
-echo "Docker ID and Image: $dockerpath"
+echo "Docker ID and Image: $dockerid $dockerpath"
+echo "$dockerpassword" | docker login -u "$DOCKER_ID" --password-stdin
+docker tag $dockerpath:latest $dockerpath
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerid/$dockerpath:$dockertag
