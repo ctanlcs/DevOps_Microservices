@@ -1,1 +1,12 @@
-<paste log output from Kubernetes-mediated prediction, here>
+buntu@ubuntu1804:~/DevOps_Microservices/project-ml-microservice-kubernetes$ sudo ./run_kubernetes.sh 
+pod/demolocal created
+NAME        READY   STATUS              RESTARTS   AGE
+demolocal   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+ubuntu@ubuntu1804:~/DevOps_Microservices/project-ml-microservice-kubernetes$ sudo ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "demolocal" already exists
+NAME        READY   STATUS    RESTARTS   AGE
+demolocal   1/1     Running   0          11s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+

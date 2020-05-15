@@ -9,12 +9,12 @@
 dockerpath=demolocal
 dockerid=ctanlcs
 dockertag=v1.0
-dockerpassword=tanes1006
+#dockerpassword=tanes1006
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerid $dockerpath"
-echo "$dockerpassword" | docker login -u "$DOCKER_ID" --password-stdin
+echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 docker tag $dockerpath:latest $dockerpath
 
 # Step 3:
