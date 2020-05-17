@@ -9,7 +9,6 @@
 dockerpath=demolocal
 dockerid=ctanlcs
 dockertag=v1.0
-#dockerpassword=tanes1006
 
 # Step 2:  
 # Authenticate & tag
