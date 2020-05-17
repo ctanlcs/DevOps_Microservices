@@ -40,3 +40,12 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+### Other files
+
+* requirements.txt - dependencies to be installed.
+* make_prediction.sh - script to request the service to make the prediction.
+* Dockerfile - Docker file that contains commands to setup the docker image.
+* Makefile - file used by make build automation tool.
+* output_txt_files - folder which contains the 2 output files required.
+
